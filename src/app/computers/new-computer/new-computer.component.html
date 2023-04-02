@@ -1,0 +1,18 @@
+<div class="container" *ngIf="formComputer" [formGroup]="formComputer">
+  <mat-form-field>
+    <mat-label>Brand</mat-label>
+    <input matInput formControlName="brand" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Model</mat-label>
+    <input matInput formControlName="model" />
+  </mat-form-field>
+  <button
+    color="primary"
+    (click)="saveComputer()"
+    mat-raised-button
+    [disabled]="formComputer.invalid"
+  >
+    SAVE
+  </button>
+</div>

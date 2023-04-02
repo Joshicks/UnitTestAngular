@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+    <span>Angular 2023</span>
+    <span class="space"></span>
+    <button mat-icon-button (click)="logout()" *ngIf="isLogged">
+    <mat-icon>logout</mat-icon>
+  </button></mat-toolbar>
+<router-outlet></router-outlet>
